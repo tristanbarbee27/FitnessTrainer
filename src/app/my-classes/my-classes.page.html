@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Classes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Default Searchbar -->
+<ion-searchbar color="light"></ion-searchbar>
+
+<ion-content>
+  <ion-card *ngFor="let class of MyClasses" (click)="ShowClassDetails()">
+    <img class = "card-image" src="{{class.image}}">
+    <div class="card-title">{{class.title}}</div>
+    <div class="card-tags">
+      <ion-chip *ngFor="let chip of class.tags">
+        <ion-label>{{chip}}</ion-label>
+      </ion-chip>
+    </div>
+  </ion-card>
+</ion-content>

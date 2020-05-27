@@ -1,0 +1,28 @@
+<script src = "cordova.js"></script>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+
+    <ion-item *ngFor="let gym of gymList" (click)="requestDetails(gym.id)" class = "ion-activatable">
+      <ion-avatar slot="start">
+        <img src="{{ gym.avatar }}">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ gym.name }}</h2>
+        <h6>{{ gym.address1 }}</h6>
+        <h6>{{ gym.address2 }}</h6>
+        <ion-chip *ngFor="let chip of gym.chips">
+          <ion-label>{{ chip }}</ion-label>
+        </ion-chip>
+      </ion-label>
+      <ion-ripple-effect></ion-ripple-effect>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

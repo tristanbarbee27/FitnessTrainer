@@ -1,0 +1,53 @@
+#profilePicture{
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gymSlider{
+    overflow: scroll;
+    height: 110px;
+}
+
+.gymItem{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.myGymCard{
+    height: 75px;
+    width: 200%;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.myGymContainer{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+#profileName{
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sliderCards{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#recentLessonsHeaderandGoals{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-style: italic;
+    text-align: center;
+
+}

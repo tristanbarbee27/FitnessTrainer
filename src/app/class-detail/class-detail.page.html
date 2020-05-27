@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Course Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card *ngFor="let course of courses" detail="true">
+      <ion-card-header color="medium" style="font-size: large;">
+        <div (click)="toggleList(course.id)" class = "ion-activatable">
+          {{course.title}} 
+          <ion-icon *ngIf="!course.showLessons" name="chevron-forward-outline" class="courseArrow"></ion-icon>
+          <ion-icon *ngIf="course.showLessons" name="chevron-down-outline" class="courseArrow"></ion-icon>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </ion-card-header>
+      <ion-list *ngIf = "course.showLessons">
+        <ion-item *ngFor="let lesson of course.lessons" (click)="navigateToLessonPage(course.id, lesson.id)" class = "ion-activatable">
+          {{lesson.title}}
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-item>
+      </ion-list>
+      
+    </ion-card>
+</ion-content>

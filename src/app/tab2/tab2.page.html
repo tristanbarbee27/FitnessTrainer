@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="homeTab">
+      My Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+[scrollEvents]="true"
+(ionScroll)="scrollAction($event)"
+[fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">My Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <section>
+    <ion-button (click)="showClasses()"
+    class="classesButton" color="medium" expand="block">
+      <span class="buttonText">  See My Classes  </span>            
+      <ion-icon class="buttonCaret" name="caret-forward-outline"></ion-icon>
+    </ion-button>
+  </section>
+
+  <ion-card>
+    <ion-card-header id="postHeader" >Create Post</ion-card-header>
+    <ion-item id="postBox">
+      <ion-textarea id="posttextarea" rows="1" cols="20" placeholder="Enter any notes here..."></ion-textarea>
+    </ion-item>
+    <ion-icon name="attach-outline"></ion-icon>
+    <ion-icon name="happy-outline"></ion-icon>
+    <ion-button id="publishButton" size="small" color="medium">Publish</ion-button>
+  </ion-card>
+  
+<ion-card *ngFor="let post of postList">
+  <ion-card-header>
+    <ion-item>
+      <ion-avatar slot="start" id="socialMediaAvatar">
+        <img src="{{post.avatarImage}}" >
+      </ion-avatar>
+      <ion-label>
+        <ion-card-title class="nameFont" text-wrap>{{post.postTitle}}</ion-card-title>
+        <ion-card-subtitle id="dateFont">{{post.postDate}}</ion-card-subtitle>
+      </ion-label>
+      <ion-icon name="ellipsis-horizontal" id="postSettings" size="small"></ion-icon>
+    </ion-item> 
+  </ion-card-header>
+  <ion-card-content>
+    <div class = "cardImageContainer">
+      <img class = "card-image" src="{{post.postImage}}">
+    </div>
+    {{post.postContent}}
+  </ion-card-content>
+  <ion-item>
+    <ion-icon (click)="toggleIcon(post.postID)" src="{{post.iconSrc}}" size="large"></ion-icon>
+    <span style="font-size: 14px;padding-top: 1em;">{{post.numberOfLikes}}</span>
+  </ion-item>
+</ion-card>
+
+<ion-fab *ngIf="isScrolling" vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-infinite-scroll threshold="100px" (ionInfinite)="generateMorePosts($event)">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Getting more posts...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+</ion-content>

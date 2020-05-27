@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Closer look</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Mortal_Kombat_Logo.svg/1200px-Mortal_Kombat_Logo.svg.png"/>
+    <ion-card-header>
+      <ion-card-title>Gym Name</ion-card-title>
+      <ion-card-subtitle>Gym... subtitle?</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Gym short description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    </ion-card-content>
+
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="navigate-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h6>1234 Street Road Ave.</h6>
+        <h6>City, State 54321</h6>
+      </ion-label>
+    </ion-item>
+
+    <ion-item href="#">
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-label>(123) 456-7890</ion-label>
+    </ion-item>
+
+    <ion-item href = "#" class="ion-activated">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label>gym@website.com</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name = "star" *ngFor="let num of [1,2,3,4,5]">
+
+      </ion-icon>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-chip>
+      <ion-label>#kickboxing</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>#muaythai</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>#jiujitsu</ion-label>
+    </ion-chip>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-title>Pricing options</ion-card-title>
+    <ion-item>
+      <ion-icon name="cash-outline" slot = "start"></ion-icon>
+      <ion-label>
+        <ion-card-title>Beginner</ion-card-title>
+        <ion-card-subtitle><span class = "goldText">$3.99</span>/month</ion-card-subtitle>
+      </ion-label>
+      <ion-button color="medium">Subscribe</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cash-outline" slot = "start"></ion-icon>
+      <ion-label>Intermediate</ion-label>
+      <ion-label><span class = "goldText">$5.99</span>/month</ion-label>
+      <ion-button color="medium">Subscribe</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cash-outline" slot = "start"></ion-icon>
+      <ion-label>Expert</ion-label>
+      <ion-label><span class = "goldText">$7.99</span>/month</ion-label>
+      <ion-button color="medium">Subscribe</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cash-outline" slot = "start"></ion-icon>
+      <ion-label>Elite</ion-label>
+      <ion-label><span class = "goldText">$9.99</span>/month</ion-label>
+      <ion-button color="medium">Subscribe</ion-button>
+    </ion-item>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="menu"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-row style="height: 70px"></ion-row>
+
+</ion-content>

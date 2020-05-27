@@ -1,0 +1,126 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-icon name="settings" style="float: right;" size="large"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-avatar id="profilePicture">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIEAwQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xABGEAABAwMCBAMEBAkJCQAAAAABAAIDBAUREiEGEzFBUWFxFCIygQcjkbEkQlJygqGywdEVMzVUdJKTovA0NkNEVWJz4fH/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAfEQEBAAICAwEBAQAAAAAAAAAAAQIRAzEEEiFBIjL/2gAMAwEAAhEDEQA/AObhVCKq8jtFUCIoK5VCUVCQOpAQEVsytC8OlJ6LUxqXKLj36Rgd1jod1UjYFdJNOduwjCor0JBOCAQt1b7bSVDvrGSHyaVzz5Zh27cfBeT/AC0tGAZ25GRnouj2x7vZBCGkY6bKzbLHb2aXto3lw7vet2I2QM+rYGry583v09fH49wn1izSNoaOWUj4Wlx+QXKpJnzSOklcXPedTie5K6ndZGw2K7Vsnww0zmAnoXv9xo/zKMcPcC1t84fnroXcqZrvwdj/AIZgOo8vIrv42H87efyst5eqJdV5V6op5qSZ9PUxPjmYcPY8YIKsleh5RVVERHoIqBVRVCiFEFEVUQZKqqZxurTpSfh281yk26bkXiQOpwvDpWjz9Fj5J6klFqYM3OrjpXHpsrZ367oi1rTNuxERVBXIxqBarau0x+sUy6ax7e4Ii2cNcCM9MqX2ajdpBwVSyW2luMHIq2+6fhd3BWXLT3O0vMdBJT3IN2DIzmRvkQOq+fz3Llnx9bxPXi+ZJDSRuZHgnCrGH11X7HQ4lnBAe47tiHifPyWjo7TxFfLgyGvc6mhIyYacjV6EjoV1nh2wUtlomxRRMja0Z0joPM+JWvH8e37knk+TJ8xQ7iW0U5is/DQy5lRL7VWZPvPYzoT6ux8gpfFDHT07IoWtZGwYa1owAoJTXMXDi6tu0zvqDJyISejW9Bv2zt8yVOA4lu/TsV9GSR8ve7bUT+kFtBHSw1VyoY6ml1aJTp+sZkjBDuw8VBbhwM2rL5+GK1lVD15Mr8Pb5A9D88LpnFUQqbBXRuGQGZ+S45wxd5rRdAGylsQdpI7bJWa1VfQVdum5NfTSQSHoHtxn0PQrGXfKH2O6UrmXCnjljkHvMe3IKhl+4CoJZntsvMpZDksa9+uN3l+UFLBzdVWXdbXW2iqNNcYHwydW6vhePFp6EeixFBRERBRERBflOGY7qwvcpy/0C8KYzRbsREVQREQEREBXKf8AnArau0uj2hnMGWZwQO6mXS49pH7dPb6OLlktkmBw4dWN8fU/qHqrtokfGcQxgAnOA3G6tw2qt4irJoLfNSMew+6J5CwOPg0gEZ+xTLhmyQ20invsdXBWuOGtcWFj/wA0jr9q8PJjvF9Thy1k2XDDjQVHtpiEW3vljMah4ealPHl4Fp4Wqp2PxLOzkw48XbZ+QyVr46OV0rRTcuemDyHAe69h26tP7lFfpDuHt94tVoz9XSxuml321ZwPuXXxZcJ61z8y45ayjCqpW0HD0NI+Nj3uG5885Ul4P4i/lOlFLOzFQxuNRI9/HfHZQK53EzZjbjS3x3V20QXKjf7W5zo4wW8trXbkl2M48vsK9kfO39dCutcySnq6SlAmeY3Ne78Vm36yuFGFzIjVOzpLyB5ldwngFRbqn+TI8OwQ6ADcfm/wXKOJbhDVR01BSRgcs5d+duMJSpPwXdJKmgDS4mRhxjyUzoX62HLRnPVQPg6gloMmp1NEjThp7FS6hnEmDGRhuxwVqEbetpKO40ppa+ninhPaRudJ8R4H0UCv30akh01hm1OH/KyHr+a79x+1TeOYB2lx3WNWXR7auC3ULvwypaXasbQxjYuPn2Hn6KWbacRrKOqoZjDWU8sEgOC2RhH/ANWOuy/SbboXcHF+CZKGRjo3u3O50uye/XPqAuNLOtIIiKId8oiICIiAiIgIiICq04cCqIguRTSwVDZ6eR0UrTlr2HBBU7sfHEt0njtHEEEVTRVDgxrtWh0Rx1Dtu4UAWVa+X/KdJzXhjBM0ucegGQsZ4Sx24uTLGyR37h2np7bK6iguMsga/Zk0utzDj4ST5LJ4i4Vory59TG1sFx0aW1LR8Q7B47j9Y7LlnEclw4V41ZdnO5tJUODxpPuvbjBB8wF2Giq2y08E9O7mQTtDmnyKxx5evyvRyz3vz8cfp7W6mraijr4uXPG/S4OORnPUeIPUeOVIqiwMkbz6KqENQC1w1kljyMYyO3QdPmCtr9KNmkmtwvVDqFTRgc3Qd3xZ6/onf0yuaUt+r8sjie6TwaD+KvQ8NmnQvaZbJb6i4ExvmlAETIukkuMADyzv6KGW2xciSW5XF4klkeXvz3c7ck/PKkM0gFPTyVADBCNTWHpqPX+H2qL3m+ukjljj6Sn3fIbjCJtn3S8MZPA6FwwwODhnGBnYrL4Tqyaqp5h90k6Qew/19ygMcz3TNY74s49FK7W51I9jIwC6UaXB3cj/ANKxOkvhrA6SWRztEMILnvPTA3Ks8BMdXGuv1SC19XJmNp6tiGQ1v7/mtVf5OTZGUAPLnus7acYOQI/xjt8h+ks3iDiKm4XtLKKjDDWuYBGwdGDpkq7aYn0ncTxPppLHSgOlfh07h+KBvp9Vy9XubLNUOmlkL5HElzj1JK8StLJC1wwev2rNNvCIiyCIiAiIgLIlpHQxB8kkYJ6MBy4/LssdOvVAREQEREBVxkZJVEQSyK7RcQWGG0XOpjpqyj3pKiU4ZI3GNDj2PgfJTf6Nq25UTRZbs0GFwLqGpY8PY7HVmoHHmFxxbbh6/wBXYqgvpnExOIL4idiR0I8CCuOXHdfHpw5pv+n0jE5lRC6KZoeC0te1wzqHcYXHZ+FW8M36cVDjJTDL6Z7jnVH4HzHQ/LxU64a4xtd3oaepkkFPO/DZmOdsx/h6Hst5xFZqW9WmWCscGNa0ujqB/wAI4+L08Vvjz38qcvH+zpw6ouU94qOS0FsW4GNtvH7lrrzJHTtZEwkuO/mt5erZU8M0jKkx80TAcuojadAz2d4H16/dDxzauo3Jc953K6vNqxn2WkfW1bTjUc4+andupIo6kvkcDoGBk7Ba6gjo+HbV7RVPAkfnS3uT5BRK4Xmpq5ZS17o4ZD8APZOk7rY8UX59XxCKije0xUnuQEjIz1Lvt/UAtDUzy1M7553ufI85c5xzlW0G/Tf0U209xtL5GsYMvc4ADzUj48tcdrrLcxjgXOoWB4H5TdsrN4PsnIqYa+tjII3iiIJc70H71nfSTaKiaGK8RSxTQxjRPoO7CTt6jsr+DnyIiyCIiAiIgIiICIiAiIgKoGVREDGOqKQW2yQXCg5jpXsmxtjcH1CwrjY6ygjMzg2SEHBew9PUdldLpiU88kYexszo2StDJNJ6tyugWziqpuFJR8M0075oC78Lqn5y+MblrfIjbK5vjPfyUg4cq47bT1tW8jmOi5Mfjk7n9yx6S3bc5Mpjp1WK409Y6WmqGslicC10bxlrh4Y8FoLpwRDTMlr+G4w6YDV7JK/Y/mOPT0Oyg1mv09JXBz3Ese7cZ6LpcN/p6SiFRUyhjMZ3O5XVje+3IblUVc9XIK8vE7HaXsfsWeWOyxVIOKb5Df7oZ+UGMaNLX4w4+ZWikjMbuuWnofJZsR5aNRAHUqQ2eO20HLmqddTVH4YWDOCtBJFJA/ErHMcRkZGMjxC2vD01NTyullYZ6kkNgizgFx7kpCp3bm3O4gmGBkMWcOjZIGkj/vk6/Jo+asccWG5GxxOpqvmR04Lp6SJuhhHXLW98eBz49l6tl2ZbYagMkjmrJHYmme7RBFjbSD3A/JGStnHxZG5rYxHVVkmNzDTFrD6E9VrSRx7Lfy2fai6XyeHP+gy/4ZRT1quaJ3Renu1nOlo2A90YWR5REQEREBF6axzzshY4dQpuLqvKIiqKgbKiqOiog21BfZ6FjGRxMcGjB1d1SvvtVWRyRj6pkgAcGuJzhapVacEZGR3Cu13RuxzjOE1O06STpznC9zSNfgMbpaOytqQorkk8soaJZHODRgAnoraIgrkbi5pixnV0x4q2qse6NzXscWvaQWkdiOiolNMynrOFaKnqgH1NRVPipHA4MTgO/iCcDHmD2WrktUtE+klnax0VRh0Yblrnb7jDh8Q8Oq2vEr6akpLHUUdO2Eue6qMbPhDvcJwOwyFLxBSXzh4x1+HwzVGqnlGxDXbtLT4joR5YVgwaCrt7Cz2Ew6mfFDUtw4Dw36YUmprgyQhr2cp3Yn4T6Fc/u1qfRz+xyzyi4U8PNiqGDPPiBOWuHdzRg+Y9F6t1XLTGndLVMpo6naKohzJTSH8l7CBpPphXZp0zmnxCoozrvP5Vo/vPVVRyVERcwREQEJwMnsivUUYlraaIjIkmYw/MgIqRN4VurpfwGhfJGI4wXHA1u0jUQPXKsVFsfGHNqIzG9hwWuGCFteG+Nqm23uRtZM6Sgkmd135QJOMeSz+N+JLTdLi0UI95rdMkwPuSHy/ivNn7b+vdh6enxBZacblqxXNIO62VRpLiYnAk+Cwpd+2CumFv68/JjFlERdXAREQEREBERAQ9ERBur+4ut1lcf6s4f5lv+Aq72m119okdl7Bz4M+XXCjrs1nDTSPekoJzqHflyd/k4D7VjWO4yWq601cw/wA273h4tOx/UqJvf6v26xsroTpq6Bwkjf322IKi1RWGhmIpt7ZXNEwhx8Gcg48HNdqHhjAKkXEEAoHVxg3oqyndIzfYEhQ0uM1oYOppZiP0HjP7TT/eSjZ+0Un9cpf8GT+KotCiAiIoCIiAsu0f0rR/+dn3oiKw2fE3/XZXm9vQIixm3h0uN/nAvEvU+qIs49t59LJREXVxEREQREQEREBERBt7H/sV5/sR/aC1HY+iIqJ9xD/ujQ/2YfcoZR/0dX/mx/thVREYaIiiv//Z">
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-text id="profileName">Bubby Fluffikans</ion-text>
+    </ion-row>
+
+    <ion-card class="sliderCards">
+      <ion-card-header color="medium" class="myGymContainer">My Gyms</ion-card-header>
+      <ion-row>
+        <ion-col>
+          <ion-slides pager="false" [options]="slideOpts">
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="sliderCards">
+      <ion-card-header color="medium" class="myGymContainer">Favorite Gyms</ion-card-header>
+      <ion-row>
+        <ion-col>
+          <ion-slides pager="false" [options]="slideOpts">
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+            <ion-slide>
+              <ion-card class="myGymCard"></ion-card>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+  </ion-grid>
+
+  <div>
+    <ion-card>
+      <ion-card-header id="recentLessonsHeaderandGoals" color="medium">Most Recent Lessons</ion-card-header>
+      <ion-list>
+        <ion-item>
+          <ion-label>1. Lesson 3</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>2. Lesson 2</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>3. Lesson 1</ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-card>
+
+  </div>
+
+  <div>
+    <ion-card>
+      <ion-card-header id="recentLessonsHeaderandGoals" color="medium">My Goals!</ion-card-header>
+      <ion-list>
+        <ion-item>
+          <ion-label>1. Learn how to UFC.</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>2. Learn how to Flag and do other cool parkour things in my backyard</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>3. Get Swole</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+
+  </div>
+
+</ion-content>

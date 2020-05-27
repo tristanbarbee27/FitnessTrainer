@@ -1,0 +1,75 @@
+.classesButton{
+    text-align: left;
+    --padding-start: 0px;
+    --padding-end: 0px;
+}
+
+.buttonCaret{
+    float: right;
+    margin-left: auto;
+}
+
+.buttonText{
+    float: left;
+    margin-left: 10px;
+}
+
+.homeTab{
+    text-align: center;
+}
+
+#postHeader{
+    padding: 6px 16px 0px 16px;
+    font-size: 13px;
+}
+
+#posttextarea{
+    font-size: 12px;
+    padding: 0;
+}
+
+#postBox{
+    padding: 0;
+}
+
+#publishButton{
+    float: right;
+    font-size: 12;
+}
+
+ion-icon {
+    font-size: 28px;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding: 2px;
+  }
+
+#socialMediaAvatar{
+    height: 15%;
+    width: 15%;
+    padding-inline-start: 0;
+    padding-left: 0;
+}
+
+.nameFont{
+    font-size: 70%;
+    float: left;
+}
+
+#dateFont{
+    font-size: 9px;
+    float: left;
+}
+
+#postSetting{
+    float: right; 
+}
+
+ion-card-header{
+    padding: 0;
+    border: none;
+}
+
+.cardImageContainer{
+    text-align:center;
+}
